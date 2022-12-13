@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>C:/Users/Andy's Razer/IdeaProjects/SoftArchMaze/src/main/java</OriginalElement>
+  <nodes>
+    <node x="-76.63893502476343" y="843.2824072253186">Maze</node>
+    <node x="978.5252473648491" y="428.231501920731">Exitable</node>
+    <node x="488.4469744022538" y="1091.071568404232">LootStrategy</node>
+    <node x="678.7514204585559" y="930.5335857156031">BedRoom</node>
+    <node x="462.40479165739737" y="948.8166948519774">HasLoot</node>
+    <node x="512.9990373333072" y="1205.8635007094897">NoLoot</node>
+    <node x="549.2285006575228" y="-14.863431500802818">Room</node>
+    <node x="248.10055486272427" y="1235.4865662043694">Player</node>
+    <node x="1087.1305732355177" y="575.5522310227655">Hallway</node>
+    <node x="767.211060423636" y="1090.797449216662">AlreadyLooted</node>
+    <node x="1022.3950742157176" y="984.7587416257117">Main</node>
+    <node x="219.55292036118078" y="947.9605612438207">RoomFactory</node>
+    <node x="849.2777512251329" y="545.1187994752727">BlockedPassage</node>
+    <node x="633.3498526554383" y="727.1176887665216">Kitchen</node>
+    <node x="225.24437722206687" y="1087.0971462428438">Prologue</node>
+    <node x="427.8039195876008" y="585.4445838836043">Lootable</node>
+    <node x="402.07010952393597" y="721.5123594888994">StoreRoom</node>
+    <node x="920.6085951043223" y="804.4351428324877">Closet</node>
+    <node x="173.6835781345494" y="628.9121288297387">Interactable</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="BedRoom" target="Room" relationship="GENERALIZATION">
+      <point x="59.74857954144409" y="-49.999585715603075" />
+      <point x="820.5" y="883.012" />
+      <point x="824.0" y="883.012" />
+      <point x="824.0" y="244.637" />
+      <point x="109.00049934247727" y="4.3150080281861847E-4" />
+    </edge>
+    <edge source="Closet" target="Room" relationship="GENERALIZATION">
+      <point x="4.0489567777513E-4" y="-49.50014283248777" />
+      <point x="992.109" y="773.0" />
+      <point x="824.0" y="773.0" />
+      <point x="824.0" y="244.637" />
+      <point x="109.00049934247727" y="4.3150080281861847E-4" />
+    </edge>
+    <edge source="HasLoot" target="LootStrategy" relationship="REALIZATION">
+      <point x="2.0834260260471638E-4" y="38.50030514802256" />
+      <point x="537.905" y="1061.0" />
+      <point x="563.947" y="1061.0" />
+      <point x="2.5597746230232588E-5" y="-26.99956840423215" />
+    </edge>
+    <edge source="AlreadyLooted" target="LootStrategy" relationship="REALIZATION">
+      <point x="-6.042363600045064E-5" y="-39.00044921666199" />
+      <point x="844.711" y="1061.0" />
+      <point x="563.947" y="1061.0" />
+      <point x="2.5597746230232588E-5" y="-26.99956840423215" />
+    </edge>
+    <edge source="StoreRoom" target="Lootable" relationship="REALIZATION">
+      <point x="81.99989047606408" y="-3.5948889944847906E-4" />
+      <point x="604.0" y="793.512" />
+      <point x="604.0" y="612.445" />
+      <point x="73.0000804123992" y="4.1611639574057335E-4" />
+    </edge>
+    <edge source="NoLoot" target="LootStrategy" relationship="REALIZATION">
+      <point x="67.9999626666928" y="-38.499500709489666" />
+      <point x="656.499" y="1061.0" />
+      <point x="563.947" y="1061.0" />
+      <point x="2.5597746230232588E-5" y="-26.99956840423215" />
+    </edge>
+    <edge source="StoreRoom" target="Room" relationship="GENERALIZATION">
+      <point x="-1.0952393597563059E-4" y="71.99964051110055" />
+      <point x="484.07" y="883.012" />
+      <point x="824.0" y="883.012" />
+      <point x="824.0" y="244.637" />
+      <point x="109.00049934247727" y="4.3150080281861847E-4" />
+    </edge>
+    <edge source="BlockedPassage" target="Exitable" relationship="REALIZATION">
+      <point x="70.0" y="-50.0" />
+      <point x="-53.24749613971619" y="27.0" />
+    </edge>
+    <edge source="Hallway" target="Room" relationship="GENERALIZATION">
+      <point x="4.267644824267336E-4" y="82.49976897723457" />
+      <point x="1158.631" y="773.0" />
+      <point x="824.0" y="773.0" />
+      <point x="824.0" y="244.637" />
+      <point x="109.00049934247727" y="4.3150080281861847E-4" />
+    </edge>
+    <edge source="StoreRoom" target="Interactable" relationship="REALIZATION">
+      <point x="-1.0952393597563059E-4" y="-72.00035948889945" />
+      <point x="484.07" y="703.0" />
+      <point x="255.68400000000003" y="703.0" />
+      <point x="4.218654506189523E-4" y="26.999871170261372" />
+    </edge>
+    <edge source="BlockedPassage" target="Room" relationship="GENERALIZATION">
+      <point x="-77.49975122513285" y="2.0052472734732874E-4" />
+      <point x="824.0" y="595.119" />
+      <point x="824.0" y="244.637" />
+      <point x="109.00049934247727" y="4.3150080281861847E-4" />
+    </edge>
+    <edge source="Kitchen" target="Lootable" relationship="REALIZATION">
+      <point x="-81.9998526554383" y="3.1123347844186355E-4" />
+      <point x="604.0" y="788.118" />
+      <point x="604.0" y="612.445" />
+      <point x="73.0000804123992" y="4.1611639574057335E-4" />
+    </edge>
+    <edge source="Kitchen" target="Room" relationship="GENERALIZATION">
+      <point x="82.0001473445617" y="3.1123347844186355E-4" />
+      <point x="820.5" y="788.118" />
+      <point x="820.5" y="883.012" />
+      <point x="824.0" y="883.012" />
+      <point x="824.0" y="244.637" />
+      <point x="109.00049934247727" y="4.3150080281861847E-4" />
+    </edge>
+    <edge source="BedRoom" target="Interactable" relationship="REALIZATION">
+      <point x="78.24857954144409" y="-49.999585715603075" />
+      <point x="839.0" y="703.0" />
+      <point x="255.68400000000003" y="703.0" />
+      <point x="4.218654506189523E-4" y="26.999871170261372" />
+    </edge>
+    <edge source="Kitchen" target="Interactable" relationship="REALIZATION">
+      <point x="1.4734456169662735E-4" y="-60.99968876652156" />
+      <point x="715.35" y="703.0" />
+      <point x="255.68400000000003" y="703.0" />
+      <point x="4.218654506189523E-4" y="26.999871170261372" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.0" showDependencies="false" x="577.0" y="716.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
